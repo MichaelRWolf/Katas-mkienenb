@@ -1,5 +1,4 @@
 use std::io;
-use std::iter;
 
 fn fizz_buzz(numbers: Vec<i32>) -> Vec<String> {
     numbers.iter().map(|i| {
@@ -21,7 +20,7 @@ fn fizz_buzz(numbers: Vec<i32>) -> Vec<String> {
  
     let mut input = String::new();
  
-    io::stdin().read_line(&mut input);
+    let _err = io::stdin().read_line(&mut input);
  
     let input: i32 = match input.trim().parse() {
         Ok(num) => num,
