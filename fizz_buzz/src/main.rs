@@ -22,10 +22,7 @@ fn fizz_buzz(numbers: Vec<i32>) -> Vec<String> {
  
     let _err = io::stdin().read_line(&mut input);
  
-    let input: i32 = match input.trim().parse() {
-        Ok(num) => num,
-        Err(_) => 0,
-    };
+    let input: i32 = input.trim().parse().unwrap_or(0);
  
     // Create a range from 1 to the user's input
     let numbers = (1..=input).collect::<Vec<i32>>();
