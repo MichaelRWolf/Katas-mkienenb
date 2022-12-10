@@ -2,17 +2,21 @@ use std::io;
 
 fn fizz_buzz(numbers: Vec<i32>) -> Vec<String> {
     numbers.iter().map(|i| {
-        if *i % 15 == 0 {
-            "Fizz Buzz".to_string()
-        } else if *i % 5 == 0 {
-            "Buzz".to_string()
-        } else if *i % 3 == 0 {
-            "Fizz".to_string()
-        } else {
-            i.to_string()
-        }
+        to_fizz_buzz_string(i)
     }).collect()
  }
+
+fn to_fizz_buzz_string(i: &i32) -> String {
+    if *i % 15 == 0 {
+        "Fizz Buzz".to_string()
+    } else if *i % 5 == 0 {
+        "Buzz".to_string()
+    } else if *i % 3 == 0 {
+        "Fizz".to_string()
+    } else {
+        i.to_string()
+    }
+}
 
  fn main() {
     // Get user input
