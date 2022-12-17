@@ -1,3 +1,14 @@
+# CodexPedia (from toolbot.ai)
+
+I typed the following phrase to https://www.toolbot.ai/apps/CodexPedia...
+> Fizz Buzz in Rust Using Functional Programming Techniques
+ 
+...then clicked `Copy results as Markdown` at the bottom of the page.  The remainder of this document is that Markdown.  The code fragments became the [initial branch](https://github.com/MichaelRWolf/Katas/tree/FizzBuzz(Rust)) in [my Kata repo](https://github.com/MichaelRWolf/Katas) in GitHub.
+
+It is working code.  It is helpful English explanation.  It saved me _hours_ of digital ditch digging to get basic syntax that I could modify.  It eliminated that start-up toil.
+
+---
+
 # Fizz Buzz in Rust Using Functional Programming Techniques
 
 Rust is a powerful modern language that allows for writing efficient and reliable code. Functional programming techniques allow for writing code in a concise and declarative way that is easier to reason about. This can be especially helpful when writing programs for solving puzzles like Fizz Buzz. 
